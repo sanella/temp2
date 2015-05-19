@@ -1,0 +1,11 @@
+@(posts: List[Post])
+
+@main("All Posts") {
+	<div class="col-sm-3"></div>
+	<div>
+	@for(post <- posts){
+		@post.content
+	}
+	
+	</div>
+}
